@@ -1,95 +1,127 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <!-- Meta informações sobre a página -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sobre mim</title>
-    </head>
-    <!-- HTML NÃO TEM PESCOÇO!  -->
-    
-    <body>
-        <header>
-            <ul>
-                <li><a href="#">Sobre Mim</a></li>
-                <li><a href="#">Formação Acadêmica</a></li>
-                <li><a href="#">Hard Skills</a></li>
-                <li><a href="#">Soft Skills</a></li>
-                <li><a href="#">Meus Projetos</a></li>
-                <li><a href="#">Meus Artigos</a></li>
-                <li><a href="#">Última Seção</a></li>
-            </ul>
-        </header>
 
-        <section>
-            <h1>Sobre mim</h1>
+<head>
+    <!-- Meta informações sobre a página -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+
+    <!-- CSS Reset (Arquivo style) -->
+    <link rel="stylesheet" href="reset.css">
+
+    <!-- CSS Externo (Arquivo style) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS Interno (Tag style) -->
+    <style>
+        /* body {
+            background-color:#00ff00;
+        } */
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobreMim">Sobre Mim</a></li>
+                <li><a href="#formacaoAcademica">Formação</a></li>
+                <li><a href="#hardSkills">Hard Skills</a></li>
+                <li><a href="#softSkills">Soft Skills</a></li>
+                <li><a href="#meusProjetos">Projetos</a></li>
+                <li><a href="#meusArtigos">Artigos</a></li>
+                <li><a href="#rodape">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobreMim">
+        <h1>Sobre mim</h1>
         <p>Sou estudante, atualmente cursando ADS no SENAI São Paulo</p>
-        <img src="gabriel.jpg" alt="Foto de um homem branco de cabelo curto e sério." width="200" title="Foto de um homem branco de cabelo curto e sério.">
+        , <img src="gabriel.jpg" alt="Foto de um homem branco de cabelo curto e sério." width="200"
+            title="Foto de um homem branco de cabelo curto e sério.">
         <p>
         </p>
 
         <ul>
             <li>
-                <a href="https://github.com/GabrielBarros09" title="Clique para acessar meu portfólio no GitHub" target="_blank"
-                >Acesse o meu GitHub</a>
+                <a href="https://github.com/GabrielBarros09" title="Clique para acessar meu portfólio no GitHub"
+                    target="_blank">Acesse o meu GitHub</a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/gabriel-barros-946aaa357/"
-                target="_blank">Acesse o meu LinkedIn</a>
+                <a href="https://www.linkedin.com/in/gabriel-barros-946aaa357/" target="_blank">Acesse o meu
+                    LinkedIn</a>
             </li>
         </ul>
-        </section>
+    </section>
 
-        <section>
-            <h2>Formação Acadêmica</h2>
-            <li>Ensino Fundamental Completo</li>
-            <li>Cursando o Ensino Médio</li>
-            <li>Cursando Análise Desenvolvimento de Sistemas - SENAI</li>
-            <li>Cursando Inglês - ECC</li>
-        </section>
+    <section id="formacaoAcademica">
+        <h2>Formação Acadêmica</h2>
+        <li>Ensino Fundamental Completo</li>
+        <li>Cursando o Ensino Médio</li>
+        <li>Cursando Análise Desenvolvimento de Sistemas - SENAI</li>
+        <li>Cursando Inglês - ECC</li>
+    </section>
 
-        <section>
-            <h2>Hard Skills</h2>
-            <li>Lógica de Programação - Básica</li>
-            <li>GitHub - Básico</li>
-            <li>PowerShell - Básico</li>
-            <li>HTML e JavaScript - Básico</li>
-            <li>Matemática básica</li>
-            <li>Inglês básico</li>
-            <li>Digtação rápida</li>
-            <li>Design Gráfico Básico - Canva</li>
-        </section>
+    <section id="hardSkills">
+        <h2>Hard Skills</h2>
+        <li>Lógica de Programação - Básica</li>
+        <li>GitHub - Básico</li>
+        <li>PowerShell - Básico</li>
+        <li>HTML e JavaScript - Básico</li>
+        <li>Matemática básica</li>
+        <li>Inglês básico</li>
+        <li>Digtação rápida</li>
+        <li>Design Gráfico Básico - Canva</li>
+    </section>
 
-        <section>
-            <h2>Soft Skills</h2>
-            <li>Organização</li>
-            <li>Adaptabilidade</li>
-            <li>Trabalho em equipe</li>
-            <li>Resolução de problemas</li>
-            <li>Paciência</li>
-            <li>Educação e respeito</li>
-            <li>Esforço</li>
-            <li>Comprometimento</li>
-        </section>
+    <section id="softSkills">
+        <h2>Soft Skills</h2>
+        <li>Organização</li>
+        <li>Adaptabilidade</li>
+        <li>Trabalho em equipe</li>
+        <li>Resolução de problemas</li>
+        <li>Paciência</li>
+        <li>Educação e respeito</li>
+        <li>Esforço</li>
+        <li>Comprometimento</li>
+    </section>
 
-        <section>
-            <h2>Meus Projetos</h2>
-            <li>
-                <a href="https://github.com/GabrielBarros09?tab=repositories" target="_blank">Acesse meus projetos</a>
-            </li>
-        </section>
+    <section id="meusProjetos">
+        <h2>Meus Projetos</h2>
+        <li>
+            <a href="https://github.com/GabrielBarros09?tab=repositories" target="_blank">Acesse meus projetos</a>
+        </li>
+    </section>
 
-        <section>
-            <h2>Meus Artigos</h2>
-        </section>
+    <section id="meusArtigos">
+        <h2>Meus Artigos</h2>
+    </section>
 
-        <footer>
-            <p>Contato</p>
-            <h5>Telefone: 11 95374-2368</h5>
-            <h5>E-mail: bielalbuquerquebarros@gmail.com</h5 >
+    <section id="contato">
+        <h2>Entre em contato comigo</h2>
+        <form>
+            <input type="text" name="nome">
+            <input type="email" name="email">
+            <textarea name="mensagem" rows="5" cols="50"></textarea>
+            <!-- <input type="submit" name="botaoEnviar" value="Solicitar contato"> -->
+            <button type="button" name="botaoEnviar">Solicitar contato</button>
+        </form>
+    </section>
 
-            <h6>© Gabriel Barros. Todos os direitos reservados.2025</h6 >
-        </footer>
+    <footer id="rodape">
+        <p>Contato</p>
+        <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>YouTube</li>
+        </ul>
+        <address>São Paulo, SP - Brazil</address>
+        <h6>© 2025 Gabriel Barros. Todos os direitos reservados.</h6>
+    </footer>
 
-    </body>
+</body>
+
 </html>
