@@ -56,16 +56,18 @@ header a:hover {
     background-color: #023e8a;
 
 }
+
+
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 section {
     /* VH -> Viewport Height (Altura da Viewport) */
     margin: 5rem;
     scroll-margin-top: 4rem;
     padding: 1rem;
-    border: 1px solid #000000;
-    border-radius: 0.5%;
+    border: 1px solid #0077b6;
+    border-radius: 20px;
     /* overflow: hidden; */
-    
+    background-color: #ffffff
 }
 
 p {
@@ -119,3 +121,8 @@ footer address, h6 {
     font-size: 0.9rem;
   }
 
+section li, 
+section a {
+    color: black;
+
+}
