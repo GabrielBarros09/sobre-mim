@@ -4,222 +4,182 @@
             propriedade: valor;
         } */
 
-        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-        body {
-            font-family: 'Ubuntu', sans-serif;
-        }
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #d3d3d3;
+} /* Corpo do Documento */
 
-        body {
-            background-color: #d3d3d3;
-        }
-        
+h1 {
+    font-size: 2em; /* tamanho fonte */  /*1rem = 16px -> 1em = "M" */
+    font-weight: bold;/* peso da fonte */
+    color: #0077b6;
+    text-align: center; /* alinha o texto (centralizado) */
+}
 
-        
-        h1 {
-            font-size: 2em; /*1rem = 16px -> 1em = "M" */
-            font-weight: bold;
-            color: #0077b6;
-            text-align: center;
-        }
-        
-        h2 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #0077b6;
-            text-align: center;
-        }
-        
-        header {
-            background-color: #0077b6;
-            padding: 1rem 2rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            position: sticky; /* Pode ser necessário TOP, LEFT, BOTTOM ou RIGHT */
-            top: 0;
-        } 
-        
-        li {
-            display: flex;
-            justify-content: center;
-            color: white
-        }
-        header ul {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-        
-        header a {
-            font-weight: 700;
-            padding: .5rem 1rem
-        }
-        
-        header a:hover {
-            background-color: #023e8a;
-        
-        }
-        
-        
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-        section {
-            /* VH -> Viewport Height (Altura da Viewport) */
-          
-            margin: 2rem;
-            scroll-margin-top: 4rem;
-            padding: 1rem;
-            border: 1px solid #0077b6;
-            border-radius: 20px;
-            /* overflow: hidden; */
-            background-color: #ffffff
-        }
-        
-        section#formacaoAcademica {
-            border: none;
-        }
-        
-        .titulo-secao {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        
-        p {
-            margin-bottom: 1rem;
-                text-align: center;
-            color: white;
-        
-        }
-        
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            max-width: 1500px;
-        }
-        
-        input[type="text"],
-        input[type="email"],
-        input, 
-        textarea {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-            padding: .25rem .75rem;
-            resize: none;
-        }
-        
-        input[type="submit"] {
-            background-color: #0077b6;
-            color: #ffffff;
-            padding: .25rem .75rem;
-            border: none;
-            font-weight: 300;
-        }
-        
-        nav a img {
-            width: 25px;
-            height: 25px;
-            margin-left: 500px,  ;
-            filter: invert(100%) brightness(1000%);
-        }
-        
-        img {
-            text-align: center;
-        
-        }
-        
-        .FotoPerfil {
-            margin: 20px auto;
-            border: 3px solid #0077b6;
-            border-radius: 50%;
-        }
-        
-        address {
-        
-            text-align: center;
-            color: white
-        }
-        
-        h6 {
-            text-align: center;
-            color: white
-        }
-        
-        footer {
-            background-color: #0077b6;
-            padding: 1rem 2rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            bottom: 0;
-        }
-        
-        footer address {
-            margin-top: 1rem
-        }
-        
-        footer address, h6 {
-            font-size: 0.9rem;
-          }
-        
-        section li, 
-        section a {
-            color: black;
-        
-            /* ESTILO DOS CARDS */
-        
-        }
-        
-        .card {
-            border-radius: 8px;
-            padding: 2rem;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-            list-style: none;
-            text-align: center;
-    
-        }
-        
-        .titulo-card {
-            font-weight: bold;
-            color: #0077b6;
-            font-size: 1.3rem;
-        }
-        
-        .instituicao-card {
-            font-size: 1.1rem;
-            color: #555;
-        }
-        
-        .cards-em-coluna {
-            justify-content: center;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            gap: 1rem;
-        }
-        
-        .cards-em-linha {
-            display: flex;
-            flex-direction: row;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0077b6;
+    text-align: center;
+}
 
-        .fotoPerfil {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          }
-          
-          .fotoPerfil.mini {
-            width: 60px;
-            height: 60px;
-            position: fixed;
-            bottom: 500px; 
-            left: 140px;    
-            top: 20px;
-            border: 2px solid white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-          }
+header {
+    background-color: #0077b6;
+    padding: 1rem 2rem; /* preenchimento (espaço interno) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra no cabeçalho */
+    position: sticky; /* deixa o header grudado no topo ao rolar á pagina */  /* Pode ser necessário TOP, LEFT, BOTTOM ou RIGHT */
+    top: 0; /* fixa no topo da página*/
+}
 
-    
-          
+li {
+    display: flex;
+    justify-content: center;
+    color: white
+}
+
+header ul {
+    display: flex; /* organiza na horizontal */
+    justify-content: center; /* centraliza na horizontal */
+    gap: 1rem; /* define um espaço entre os itens */
+}
+
+header a {
+    font-weight: 700;
+    padding: .5rem 1rem
+}
+
+header a:hover {
+    background-color: #023e8a;
+
+} /* sombra quando passa o mouse por cima */
+
+
+
+section {
+    /* VH -> Viewport Height (Altura da Viewport) */
+
+    margin: 2rem; /* margem externa */
+    scroll-margin-top: 4rem; /* define uma margem de rolagem */
+    padding: 1rem;
+    border: 2px solid #0077b6;
+    border-radius: 20px;
+    background-color: #ffffff
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 2rem; /* espaço abaixo do título/parágrafo */
+}
+
+p {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: white
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* organiza os elementos verticalmente */
+    gap: 1rem;
+    max-width: 1600px; /* define largura máxima do formulário */
+}
+
+input[type="text"],
+input[type="email"],
+input,
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: .25rem .75rem;
+    resize: none; /* não deixa redimensionar */
+}
+
+input[type="submit"] {
+    background-color: #0077b6;
+    color: #ffffff;
+    padding: .25rem .75rem;
+    border: none;
+    font-weight: 300;
+}
+
+nav a img {
+    width: 25px;
+    height: 25px;
+    filter: invert(100%) brightness(1000%); /* aplica efeito de cor na imagem */
+}
+
+.FotoPerfil {
+    margin: 20px auto;
+    border: 3px solid #0077b6;
+    border-radius: 50%;
+}
+
+address {
+    text-align: center;
+    color: white
+}
+
+h6 {
+    text-align: center;
+    color: white
+}
+
+footer {
+    background-color: #0077b6;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    bottom: 0;
+}
+
+footer address {
+    margin-top: 1rem;
+}
+
+section li,
+section a {
+    color: black;
+
+}
+
+/* ESTILO DOS CARDS */
+
+.card {
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+}
+
+.titulo-card {
+    font-weight: bold;
+    color: #0077b6;
+    font-size: 1.3rem;
+}
+
+.instituicao-card {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.cards-em-coluna {
+    justify-content: center; /* centraliza os cards */
+    display: flex;
+    flex-wrap: wrap; /* permite que quebrem linha se não couberem */
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cards-em-linha {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.textoSobre {
+    color: black;
+}
