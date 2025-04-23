@@ -1,32 +1,64 @@
-/*CSS Externo*/
-
-/* seletor {
-            propriedade: valor;
-        } */
+/* Todos os direitos reservados - Gabriel Barros */
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* Arquivo CSS da fonte Ubuntu */
+
+:root { /* pronúncia: [rut] */
+    --cor-primaria: #34baab;
+    --cor-secundaria: #459a96;
+    --cor-botao: #333;
+    --cor-fundo-pagina: #f8f4f1;
+    --cor-fundo-cartao: #fff;
+    --cor-terciaria: #484450;
+    --cor-quartenaria: #fff;
+    --cor-fundo: #fff;
+    --cor-primaria-texto: #466067;
+    --cor-bordas: #34baab;
+}
+
+[data-theme="dark"] {
+    --cor-primaria: #34baab;
+    --cor-secundaria: #459a96;
+    --cor-botao: #f8f4f1;
+    --cor-fundo-pagina: #211710;
+    --cor-fundo-cartao: #555;
+    --cor-terciaria: #cccccc;
+    --cor-quartenaria: #000;
+    --cor-fundo: #121212;
+    --cor-primaria-texto: #e4f1f3;
+    --cor-bordas: #555;
+}
+
+[data-theme="alto-constraste"] {
+    --cor-primaria: #000;
+    --cor-secundaria: #f0ff0a;
+    --cor-botao: #fff;
+    --cor-fundo-pagina: #000;
+    --cor-fundo-cartao: #fff;
+    --cor-terciaria: #000;
+    --cor-quartenaria: #fff;
+    --cor-fundo: #fff;
+    --cor-primaria-texto: #000;
+    --cor-bordas: #fbff00;
+}
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    background-color: #d3d3d3;
+    background-color: var(--cor-fundo-pagina);
+    color: var(--cor-primaria-texto);
+    line-height: 1.6;
+
 } /* Corpo do Documento */
 
-h1 {
+h1, h2 {
     font-size: 2em; /* tamanho fonte */  /*1rem = 16px -> 1em = "M" */
     font-weight: bold;/* peso da fonte */
-    color: #0077b6;
+    color: var(--cor-primaria);
     text-align: center; /* alinha o texto (centralizado) */
 }
 
-h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #0077b6;
-    text-align: center;
-}
-
 header {
-    background-color: #0077b6;
+    background-color: var(--cor-primaria);
     padding: 1rem 2rem; /* preenchimento (espaço interno) */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra no cabeçalho */
     position: sticky; /* deixa o header grudado no topo ao rolar á pagina */  /* Pode ser necessário TOP, LEFT, BOTTOM ou RIGHT */
@@ -36,7 +68,7 @@ header {
 li {
     display: flex;
     justify-content: center;
-    color: white
+    color: var(--cor-quartenaria)
 }
 
 header ul {
@@ -51,7 +83,7 @@ header a {
 }
 
 header a:hover {
-    background-color: #023e8a;
+    background-color: var(--cor-secundaria);
 
 } /* sombra quando passa o mouse por cima */
 
@@ -63,20 +95,29 @@ section {
     margin: 2rem; /* margem externa */
     scroll-margin-top: 4rem; /* define uma margem de rolagem */
     padding: 1rem;
-    border: 2px solid #0077b6;
+    border: 2px solid var(--cor-bordas);
     border-radius: 20px;
-    background-color: #ffffff
+    background-color: var(--cor-fundo)
+
+}
+
+.contato {
+    color: var(--cor-fundo)
+}
+
+u {
+    color: var(--cor-primaria)
 }
 
 .titulo-secao {
     text-align: center;
-    margin-bottom: 2rem; /* espaço abaixo do título/parágrafo */
+    margin-bottom: 1rem; /* espaço abaixo do título/parágrafo */
 }
 
 p {
     margin-bottom: 1rem;
     text-align: center;
-    color: white
+    color: var(--cor)
 }
 
 form {
@@ -90,7 +131,7 @@ input[type="text"],
 input[type="email"],
 input,
 textarea {
-    border: 1px solid #ccc;
+    border: 2px solid var(--cor-bordas);
     border-radius: 8px;
     margin-bottom: 1rem;
     padding: .25rem .75rem;
@@ -98,8 +139,8 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: #0077b6;
-    color: #ffffff;
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
     padding: .25rem .75rem;
     border: none;
     font-weight: 300;
@@ -113,22 +154,22 @@ nav a img {
 
 .FotoPerfil {
     margin: 20px auto;
-    border: 3px solid #0077b6;
+    border: 3px solid var(--cor-primaria);
     border-radius: 50%;
 }
 
 address {
     text-align: center;
-    color: white
+    color: var(--cor-quartenaria)
 }
 
 h6 {
     text-align: center;
-    color: white
+    color: var(--cor-quartenaria)
 }
 
 footer {
-    background-color: #0077b6;
+    background-color: var(--cor-primaria);
     padding: 1rem 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     bottom: 0;
@@ -140,46 +181,116 @@ footer address {
 
 section li,
 section a {
-    color: black;
+    color: var(--cor-terciaria);
 
 }
 
 /* ESTILO DOS CARDS */
+
+.cards-em-coluna {
+    flex-direction: column; /* itens ficam em coluna, de cima para baixo */
+    gap: 1rem;
+}
+
+.cards-em-linha {
+    display: flex;
+    flex-direction: row; /* itens ficam em linha, da esquerda para direita */
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
+}
 
 .card {
     border-radius: 8px;
     padding: 2rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     text-align: center;
+    background-color: var(--cor-fundo-cartao);
+    margin-bottom: 1rem;
+}
 
+.card li {
+    margin-bottom: 0.5rem;
 }
 
 .titulo-card {
     font-weight: bold;
-    color: #0077b6;
+    color: var(--cor-primaria);
     font-size: 1.3rem;
 }
 
 .instituicao-card {
     font-size: 1.1rem;
-    color: #555;
+    color: var(--cor-primaria-texto);
 }
 
-.cards-em-coluna {
-    justify-content: center; /* centraliza os cards */
+.card-imagem img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card-descricao {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--cor-primaria);
+}
+
+#meusProjetos .card {
+    width: 30%;
+}
+
+.botao {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    margin: 0.3rem 0.3rem 0 0;
+}
+
+.botao:hover {
+    cursor: pointer;
+    background-color: var(--cor-secundaria);
+}
+
+.botao-demo,
+.botao-continue {
+    background-color: var(--cor-primaria);
+    color: var(--cor-primaria-texto);
+}
+
+.botao-compartilhar {
+    background-color: var(--cor-bordas);
+}
+
+.botao-compartilhar:hover {
+    background-color: var(--cor-secundaria);
+}
+
+.artigos {
+    justify-content: space-evenly;
+}
+
+.artigos header {
+    background-color: var(--cor-fundo-cartao);
+    box-shadow: none;
+}
+
+.artigos article {
     display: flex;
-    flex-wrap: wrap; /* permite que quebrem linha se não couberem */
     flex-direction: column;
-    gap: 1rem;
+    width: 30%;
+    padding: 1rem;
+    border-left: 5px solid var(--cor-primaria);
+    margin-bottom: 1rem;
+    border-radius: 8px;
 }
 
-.cards-em-linha {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    flex-wrap: wrap;
+.artigos h3 {
+    margin-top: 0;
+    color: var(--cor-secundaria);
+    margin-bottom: 1rem;
 }
 
 .textoSobre {
-    color: black;
+    color: var(--cor-terciaria);
 }
+

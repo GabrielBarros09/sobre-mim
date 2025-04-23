@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
+
 
 <head>
     <!-- Meta informações sobre a página -->
@@ -33,6 +34,9 @@
                 <li><a href="#meusProjetos"><img src="projetos.png" alt="Ícone">Projetos</a></li>
                 <li><a href="#meusArtigos"><img src="artigo.png" alt="Ícone">Artigos</a></li>
                 <li><a href="#contato"><img src="contato.png" alt="Ícone">Contato</a></li>
+                <li><a><span id="botao-tema"><img src="lampada.png" alt="Ícone"></span></a></li>
+                <li><a><span id="botao-contraste"><img src="olho.png" alt="Ícone"></span></a></li>
+
             </ul>
         </nav>
     </header>
@@ -46,27 +50,26 @@
         <ul>
             <li>
                 <a href="https://github.com/GabrielBarros09" title="Clique para acessar meu portfólio no GitHub"
-                    target="_blank"><u>Acesse o meu GitHub</u></a>
+                    target="_blank"><u>➜ Acesse o meu GitHub</u></a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/gabriel-barros-946aaa357/" target="_blank"><u>Acesse o meu
+                <a href="https://www.linkedin.com/in/gabriel-barros-946aaa357/" target="_blank"><u>➜ Acesse o meu
                         LinkedIn</u></a>
             </li>
         </ul>
     </section>
 
     <section id="formacaoAcademica">
-
-        <h2><u>➜ Formação Acadêmica</u></h2>
+        <h2>➜ Formação Acadêmica</h2>
 
         <div class="cards-em-coluna"> </div>
         <div class="titulo-secao"></div>
         <div class="cards"></div>
 
         <ul class="card">
-            <li class="titulo-card">Ensino Médio</li>
+            <li class="titulo-card">Ensino Fundamental Completo</li>
             <li class="instituicao-card">SESI 111 - Ipiranga "Roberto Simonsen"</li>
-            <li class="ano-card">2026</li>
+            <li class="ano-card">2023</li>
         </ul>
 
         <ul class="card">
@@ -78,10 +81,11 @@
     </section>
 
     <section id="hardSkills">
-        <h2><u>➜ Hard Skills</u></h2>
-
-        <div class="cards-em-coluna"> </div>
+        <h2>➜ Hard Skills</h2>
+        
         <div class="titulo-secao"></div>
+        <div class="cards-em-linha">
+        <div class="cards-em-coluna"> </div>
         <div class="cards"></div>
 
         <ul class="card">
@@ -103,14 +107,27 @@
         </ul>
 
         <ul class="card">
+            <li class="icone-card">🐈‍⬛</li>
+            <li class="titulo-card">GitHub</li>
+            <li class="descricao-card">Conhecimento com comandos básicos</li>
+        </ul>
+
+        <ul class="card">
             <li class="icone-card">⌨️</li>
-            <li class="titulo-card">Digitação Rápida</li>
-            <li class="descricao-card">Alta velocidade e precisão</li>
+            <li class="titulo-card">Digitação rápida</li>
+            <li class="descricao-card">Agilidade e precisão no teclado</li>
+        </ul>
+
+        <ul class="card">
+            <li class="icone-card">🗽</li>
+            <li class="titulo-card">Inglês básico</li>
+            <li class="descricao-card">Conhecimento básico da Língua Inglesa</li>
         </ul>
 
     </section>
     <section id="softSkills">
-        <h2><u>➜ Soft Skills</u></h2>
+        <h2>➜ Soft Skills</h2>
+        <div class="titulo-secao"></div>
         <div class="cards-em-linha">
 
             <ul class="card">
@@ -164,29 +181,76 @@
     </section>
 
     <section id="meusProjetos">
-        <h2><u>➜ Meus Projetos</u></h2>
+        <h2>➜ <u>Meus Projetos</u></h2>
 
-        <div class="cards-em-coluna"> </div>
         <div class="titulo-secao"></div>
+        <div class="cards-em-coluna"> </div>
         <div class="cards"></div>
 
-       <ul class ="card">
-        <li class="icone-card">🗃️</li>
-        <a href="https://github.com/GabrielBarros09?tab=repositories" target="_blank">
-        <u><li class="titulo-card">Projetos - GitHub</li></u>
-        </a>
-
-       </ul>
-
+        <ul class="card">
+            <li class="card-imagem">
+                <img src="imagem.png" alt="Jogo Moonlander">
+            </li>
+            <li class="card-titulo">Moon Lander</li>
+            <li class="card-descricao">Um jogo de simulação de pouso lunar.</li>
+            <li class="card-cta">
+            <button type="button" class="botao botao-demo">Jogue Agora!</button>
+            </li>
+            <li class="card-gh"><a href="https://github.com/GabrielBarros09/lopal-moonlander">GitHub</a></li>
+        </ul>
     </section>
 
     <section id="meusArtigos">
-        <h2><u>➜ Meus Artigos</u></h2>
+        <h2>➜ Meus Artigos</h2>
+        <div class="titulo-secao"></div>
+        <div class="artigos cards-em-linha">
+
+        <article class="card">
+            <header>
+                <h3 class="card-titulo">Portfólio profissional usando GitHub Pages</h3>
+                <span class="data-publicacao">15 abr 2025</span>
+                <span class="autor">Gabriel Barros</span>
+            </header>
+                <p>Crie e publique seu portfólio profissional usando GitHub Pages, uma maneira fácil e gratuita de mostrar seus projetos e habilidades</p>
+            <footer>
+                <button type="button" class="botao botao-continue">Continue Lendo</button>
+                <button type="button" class="botao botao-compartilhar">Compartilhar</button>
+            </footer>
+        </article>
+
+        <article class="card">
+            <header>
+                <h3 class="card-titulo">Comandos básicos do GitHub para iniciar seu projeto</h3>
+                <span class="data-publicacao">21 abr 2025</span>
+                <span class="autor">Gabriel Barros</span>
+            </header>
+            <p>Utilize e execute os comandos básicos do GitHub para começar agora seu projetos</p>
+            <footer>
+                <button type="button" class="botao botao-continue">Continue Lendo</button>
+                <button type="button" class="botao botao-compartilhar">Compartilhar</button>
+            </footer>
+        </article>
+
+        <article class="card">
+            <header>
+                <h3 class="card-titulo">Comandos básicos com PowerShell</h3>
+                <span class="data-publicacao">23 abr 2025</span>
+                <span class="autor">Gabriel Barros</span>
+            </header>
+            <p>Aprenda agora a utilizar os comandos básicos do PowerShell para modificações, criações e exclusões de arquivos e programas</p>
+            <footer>
+                <button type="button" class="botao botao-continue">Continue Lendo</button>
+                <button type="button" class="botao botao-compartilhar">Compartilhar</button>
+            </footer>
+        </article>
+
         <a></a>
     </section>
 
     <section id="contato">
-        <h2><u>➜ Entre em Contato</u></h2>
+        <h2>➜ Entre em Contato</h2>
+        <div class="titulo-secao"></div>
+
         <form>
             <input type="text" name="nome">
             <input type="email" name="email">
@@ -198,7 +262,7 @@
 
     <footer id="rodape">
         <h1>
-            <p><u>Contato</u></p>
+            <p class="contato">Contato</p>
         </h1>
         <ul>
             <li>Telefone: (11 95374-2368)</li>
@@ -208,6 +272,33 @@
         <h6>© 2025 Gabriel Barros. Todos os direitos reservados.</h6>
     </footer>
 
+    <script>
+        document.querySelector("#botao-tema").addEventListener("click", trocaTema);
+
+        function trocaTema() {
+            // Função que faz o toggle do tema da página
+            const root = document.documentElement;
+
+            if (root.getAttribute("data-theme") === "dark") {
+                root.removeAttribute("data-theme");
+            }else{
+                root.setAttribute("data-theme", "dark");
+            }
+        }
+
+        document.querySelector("#botao-contraste").addEventListener("click", trocaTemaHigh)
+
+        function trocaTemaHigh() {
+            // Função que faz o toggle do tema da página
+            const root = document.documentElement;
+
+            if (root.getAttribute("data-theme") === "alto-constraste") {
+                root.removeAttribute("data-theme");
+            }else{
+                root.setAttribute("data-theme", "alto-constraste");
+            }
+        }
+    </script>
 </body>
 
 </html>
